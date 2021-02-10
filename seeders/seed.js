@@ -7,7 +7,7 @@ let db = require("../models");
 // });
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/ClusterFitness',
+  process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -15,6 +15,7 @@ mongoose.connect(
     useFindAndModify: false
   }
 );
+
 
 
 
