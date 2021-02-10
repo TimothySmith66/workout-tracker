@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-
+const User = require("./models/user");
 // express dependency
 const express = require('express');
 // calls express 
  const app = express();
- const routes = require("./api.js");
+ const routes = require("./public/api.js");
  const PORT = process.env.PORT || 3001;
 
 app.use(express.static("public"));
@@ -15,9 +15,6 @@ app.use(express.static("public"))
 
 
 
-  app.get('/', (req, res) => {
-    res.send('Hi!')
-  })
 
 //port listener
 app.listen(PORT, () => {
