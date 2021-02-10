@@ -7,7 +7,7 @@ let db = require("../models");
 // });
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
+  process.env.MONGODB_URI || 'mongodb://localhost/fitnesstracker',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
