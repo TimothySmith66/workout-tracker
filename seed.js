@@ -7,7 +7,7 @@ let db = require("../models");
 // });
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/Cluster-Fitness',
+  process.env.MONGODB_URI || 'mongodb://localhost/ClusterFitness',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
